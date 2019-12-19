@@ -33,7 +33,7 @@ web-app 밑으로 추가!
 </servlet>
 
 <servlet-mapping>
-  <servlet-name>da</servlet-name>
+  <servlet-name>hw</servlet-name>
   <url-pattern>/Damin</url-pattern>
 </servlet-mapping>
 
