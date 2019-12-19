@@ -1,0 +1,276 @@
+19-Dec-2019 10:58:59.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.30
+19-Dec-2019 10:58:59.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 16:42:04 UTC
+19-Dec-2019 10:58:59.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.30.0
+19-Dec-2019 10:58:59.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Dec-2019 10:58:59.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Dec-2019 10:58:59.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Dec-2019 10:58:59.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+19-Dec-2019 10:58:59.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+19-Dec-2019 10:58:59.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Dec-2019 10:58:59.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:58:59.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:58:59.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\conf\logging.properties
+19-Dec-2019 10:58:59.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Dec-2019 10:58:59.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Dec-2019 10:58:59.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Dec-2019 10:58:59.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Dec-2019 10:58:59.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:58:59.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:58:59.774 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\temp
+19-Dec-2019 10:58:59.778 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+19-Dec-2019 10:58:59.779 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+19-Dec-2019 10:58:59.781 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+19-Dec-2019 10:58:59.809 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+19-Dec-2019 10:59:00.608 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 10:59:01.507 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 10:59:01.522 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2,118] milliseconds
+19-Dec-2019 10:59:01.664 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Dec-2019 10:59:01.664 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.30]
+19-Dec-2019 10:59:01.688 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs]
+19-Dec-2019 10:59:02.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs] has finished in [477] ms
+19-Dec-2019 10:59:02.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples]
+19-Dec-2019 10:59:03.872 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples] has finished in [1,705] ms
+19-Dec-2019 10:59:03.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager]
+19-Dec-2019 10:59:03.938 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager] has finished in [63] ms
+19-Dec-2019 10:59:03.939 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager]
+19-Dec-2019 10:59:03.998 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager] has finished in [59] ms
+19-Dec-2019 10:59:03.999 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT]
+19-Dec-2019 10:59:04.040 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:720)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1133)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1867)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:429)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+		... 37 more
+	Caused by: java.lang.IllegalArgumentException: Servlet mapping specifies an unknown servlet name [da]
+		at org.apache.catalina.core.StandardContext.addServletMappingDecoded(StandardContext.java:3174)
+		at org.apache.catalina.Context.addServletMappingDecoded(Context.java:881)
+		at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1391)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1174)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5051)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 38 more
+19-Dec-2019 10:59:04.048 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT] has finished in [49] ms
+19-Dec-2019 10:59:04.055 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 10:59:04.070 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 10:59:04.076 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2,552] milliseconds
+19-Dec-2019 10:59:24.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.30
+19-Dec-2019 10:59:24.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 16:42:04 UTC
+19-Dec-2019 10:59:24.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.30.0
+19-Dec-2019 10:59:24.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Dec-2019 10:59:24.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Dec-2019 10:59:24.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Dec-2019 10:59:24.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+19-Dec-2019 10:59:24.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+19-Dec-2019 10:59:24.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Dec-2019 10:59:24.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:59:24.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:59:24.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\conf\logging.properties
+19-Dec-2019 10:59:24.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Dec-2019 10:59:24.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Dec-2019 10:59:24.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Dec-2019 10:59:24.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Dec-2019 10:59:24.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:59:24.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 10:59:24.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\temp
+19-Dec-2019 10:59:24.614 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+19-Dec-2019 10:59:24.615 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+19-Dec-2019 10:59:24.616 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+19-Dec-2019 10:59:24.623 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+19-Dec-2019 10:59:25.044 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 10:59:25.709 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 10:59:25.715 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,383] milliseconds
+19-Dec-2019 10:59:25.779 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Dec-2019 10:59:25.780 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.30]
+19-Dec-2019 10:59:25.797 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs]
+19-Dec-2019 10:59:26.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs] has finished in [324] ms
+19-Dec-2019 10:59:26.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples]
+19-Dec-2019 10:59:26.741 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples] has finished in [618] ms
+19-Dec-2019 10:59:26.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager]
+19-Dec-2019 10:59:26.797 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager] has finished in [55] ms
+19-Dec-2019 10:59:26.798 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager]
+19-Dec-2019 10:59:26.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager] has finished in [43] ms
+19-Dec-2019 10:59:26.842 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT]
+19-Dec-2019 10:59:26.888 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:720)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1133)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1867)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:429)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:936)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+		... 37 more
+	Caused by: java.lang.IllegalArgumentException: Servlet mapping specifies an unknown servlet name [da]
+		at org.apache.catalina.core.StandardContext.addServletMappingDecoded(StandardContext.java:3174)
+		at org.apache.catalina.Context.addServletMappingDecoded(Context.java:881)
+		at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1391)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1174)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5051)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 38 more
+19-Dec-2019 10:59:26.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT] has finished in [56] ms
+19-Dec-2019 10:59:26.905 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 10:59:26.918 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 10:59:26.924 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1,202] milliseconds
+19-Dec-2019 11:00:12.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.30
+19-Dec-2019 11:00:12.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 16:42:04 UTC
+19-Dec-2019 11:00:12.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.30.0
+19-Dec-2019 11:00:12.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Dec-2019 11:00:12.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Dec-2019 11:00:12.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Dec-2019 11:00:12.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+19-Dec-2019 11:00:12.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+19-Dec-2019 11:00:12.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Dec-2019 11:00:12.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:00:12.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:00:12.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\conf\logging.properties
+19-Dec-2019 11:00:12.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Dec-2019 11:00:12.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Dec-2019 11:00:12.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Dec-2019 11:00:12.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Dec-2019 11:00:12.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:00:12.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:00:12.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\temp
+19-Dec-2019 11:00:12.047 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+19-Dec-2019 11:00:12.047 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+19-Dec-2019 11:00:12.048 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+19-Dec-2019 11:00:12.056 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+19-Dec-2019 11:00:12.480 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 11:00:13.140 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 11:00:13.147 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,393] milliseconds
+19-Dec-2019 11:00:13.212 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Dec-2019 11:00:13.214 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.30]
+19-Dec-2019 11:00:13.233 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs]
+19-Dec-2019 11:00:13.595 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs] has finished in [361] ms
+19-Dec-2019 11:00:13.595 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples]
+19-Dec-2019 11:00:14.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples] has finished in [602] ms
+19-Dec-2019 11:00:14.198 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager]
+19-Dec-2019 11:00:14.243 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager] has finished in [44] ms
+19-Dec-2019 11:00:14.243 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager]
+19-Dec-2019 11:00:14.290 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager] has finished in [47] ms
+19-Dec-2019 11:00:14.292 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT]
+19-Dec-2019 11:00:14.340 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT] has finished in [48] ms
+19-Dec-2019 11:00:14.345 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 11:00:14.362 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 11:00:14.366 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1,214] milliseconds
+19-Dec-2019 11:02:16.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.30
+19-Dec-2019 11:02:16.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 16:42:04 UTC
+19-Dec-2019 11:02:16.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.30.0
+19-Dec-2019 11:02:16.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Dec-2019 11:02:16.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Dec-2019 11:02:16.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Dec-2019 11:02:16.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_191\jre
+19-Dec-2019 11:02:16.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+19-Dec-2019 11:02:16.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Dec-2019 11:02:16.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:02:16.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:02:16.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\conf\logging.properties
+19-Dec-2019 11:02:16.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Dec-2019 11:02:16.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Dec-2019 11:02:16.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Dec-2019 11:02:16.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Dec-2019 11:02:16.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:02:16.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30
+19-Dec-2019 11:02:16.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\temp
+19-Dec-2019 11:02:16.043 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+19-Dec-2019 11:02:16.044 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+19-Dec-2019 11:02:16.045 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+19-Dec-2019 11:02:16.052 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+19-Dec-2019 11:02:16.679 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 11:02:17.785 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 11:02:17.797 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2,106] milliseconds
+19-Dec-2019 11:02:17.887 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Dec-2019 11:02:17.892 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.30]
+19-Dec-2019 11:02:17.915 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs]
+19-Dec-2019 11:02:18.474 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\docs] has finished in [558] ms
+19-Dec-2019 11:02:18.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples]
+19-Dec-2019 11:02:19.678 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\examples] has finished in [1,202] ms
+19-Dec-2019 11:02:19.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager]
+19-Dec-2019 11:02:19.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\host-manager] has finished in [179] ms
+19-Dec-2019 11:02:19.866 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager]
+19-Dec-2019 11:02:19.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\manager] has finished in [121] ms
+19-Dec-2019 11:02:19.992 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT]
+19-Dec-2019 11:02:20.103 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\damin\eclipse-workspace\apache-tomcat-9.0.30\webapps\ROOT] has finished in [112] ms
+19-Dec-2019 11:02:20.118 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 11:02:20.150 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 11:02:20.161 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2,361] milliseconds
