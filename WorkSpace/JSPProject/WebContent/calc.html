@@ -7,13 +7,17 @@
 <body>
 	<form action="calc" method="post">
 		<div>
-			<label>계산할 값을 입력 하세요.</label>
+			<label>x : </label>
+			<input type="text" name="x"/>
 		</div>
 		<div>
-			<input name="x" type="text">
-			<input name="y" type="text">
-			<input type="submit" value="덧셈">
-			<input type="submit" value="뺄셈">
+			<label>y : </label>
+			<input type="text" name="y"/>
+		</div>
+		<div>
+			<input type="submit" name="operator" value="덧셈">
+			<input type="submit" name="operator" value="뺄셈">
+			
 		</div>
 	</form>
 </body>
