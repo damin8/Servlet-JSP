@@ -1,6 +1,7 @@
 동영상 Reference : [Java & Servlet](https://www.youtube.com/watch?v=jp7vtbLin-s&list=PLq8wAnVUcTFVOtENMsujSgtv2TOsMy8zd&index=8)
 
 개념 Reference : [About Servlet](https://mangkyu.tistory.com/14)
+               : [About_JSP](https://galid1.tistory.com/488)
 
 개념 정리 된 글 : [Servlet/JSP](https://damin8.github.io/archive/?tag=Servlet_JSP)
 
@@ -54,9 +55,18 @@ Servlet으로 JSP의 역학을 할 수 있고, 역도 성립한다.
 
 그럼 왜 둘을 혼용하지? 라는 생각이 들었다.
 
-단점이 분명히 존재한다.
+오직 한 가지만 사용한다면 단점이 분명히 존재한다.
 
-1. 프로젝트가 커지거나 하면 유지 보수가 힘들어진다.
+- 유지 보수가 힘들어진다.
 
-2. View Logic 과 Control Logic이 혼합되어서 혼잡해진다.
+- View Logic 과 Control Logic이 혼합되어서 혼잡해진다.
+
+둘 을 나눠서 쓰게 된다면
+
+- 유지 보수 및 확장 용이
+
+- 개발자와 디자이너의 분업 용이
+
+개발자에게 가장 중요한 유지 보수 및 확장이 용이하다는 점이 가장 매력있다고 생각한다.
+
 
