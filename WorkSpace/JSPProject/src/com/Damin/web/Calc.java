@@ -23,7 +23,6 @@ public class Calc extends HttpServlet {
 
 		String v = "";
 		String op = "";
-
 		int v_ = 0;
 		if (!v.equals(""))
 			v_ = Integer.parseInt(v);
@@ -46,23 +45,12 @@ public class Calc extends HttpServlet {
 			}
 			int y = v_;
 			int result = 0;
-			//String op_ = (String) session.getAttribute("op");
-			// String op_ = (String)application.getAttribute("op");
-			if (op.equals("+"))
-				result = x + y;
-			else
-				result = x - y;
-		} else {
-			// application.setAttribute("value", v);
-			// application.setAttribute("op", op);
-
-			// session.setAttribute("value", v);
-			// session.setAttribute("op", op);
 
 			Cookie valueCookie = new Cookie("value", String.valueOf(v_));
 			Cookie opCookie = new Cookie("op", op);
 			response.addCookie(valueCookie);
 			response.addCookie(opCookie);
+			response.sendRedirect("calc.html");
 		}
 	}
 
