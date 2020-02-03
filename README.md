@@ -2,6 +2,8 @@
 
 개념 Reference : [About Servlet](https://mangkyu.tistory.com/14)
 
+개념 정리 된 글 : [Servlet/JSP](https://damin8.github.io/archive/?tag=Servlet_JSP)
+
 ### Servlet
 
 - 웹 프로그래밍에서 클라이언트의 요청을 처리
@@ -26,5 +28,35 @@
 
 - HTML 변경 시 Servlet을 재컴파일해야 하는 단점이 있다.
 
+### JSP
 
+- HTML에 Java 코드를 삽입하여 동적인 웹페이지를 만들 수 있는 기술
+
+- MVC(Model View Controller) 패턴에서 View로 이용된다.
+
+- Jsp로 작성된 프로그램은 JVM 상에서 처리되기 위해 서블릿 컨테이너(Tomcat)에 의해 Servlet으로 변환되어 필요한 작업 수행한 뒤 순수 HTML을 만들어 낸다.
+
+### JSP 특징
+
+- Servlet의 단점을 보완하고자 만든 Servlet 기반의 스크립트 기술
+
+- Servlet 만으로 웹 프로그래밍을 할 수 있지만, View를 위해 너무 많은 코드 필요하는 현상 발생
+
+- Jsp 파일이 Servlet으로 변환되는 과정은 오직 한번
+
+- 따라서 많은 사용자의 요청이 있더라도 처리속도는 거의 유지된다.
+
+- Jsp 파일에 대한 Servlet 객체가 있다면 재활용
+
+### 왜 둘 다 쓰는지?
+
+Servlet으로 JSP의 역학을 할 수 있고, 역도 성립한다.
+
+그럼 왜 둘을 혼용하지? 라는 생각이 들었다.
+
+단점이 분명히 존재한다.
+
+1. 프로젝트가 커지거나 하면 유지 보수가 힘들어진다.
+
+2. View Logic 과 Control Logic이 혼합되어서 혼잡해진다.
 
