@@ -23,7 +23,7 @@ padding: 0px 5px;
 		<div>
 			<table>
 			<tr>
-						<td class="output" colspan="4">0</td>
+						<td class="output" colspan="4">${3+4}</td>
 			</tr>
 			<tr>
 						<td><input type="submit" name="operator" value="CE"/></td>

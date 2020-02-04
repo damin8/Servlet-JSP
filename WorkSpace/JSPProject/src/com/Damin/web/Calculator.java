@@ -134,7 +134,7 @@ public class Calculator extends HttpServlet{
 		Cookie expCookie = new Cookie("exp", exp);
 		if (op != null && op.equals("C"))
 			expCookie.setMaxAge(0);
-		expCookie.setPath("calculator"); // 이거 안해주면 루트에 저장된다 -> 모든 url에 저장 된다
+		expCookie.setPath("/calculator"); // 이거 안해주면 루트에 저장된다 -> 모든 url에 저장 된다
 		response.addCookie(expCookie);
 		response.sendRedirect("calculator");
 	}
