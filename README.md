@@ -1,7 +1,7 @@
 동영상 Reference : [Java & Servlet](https://www.youtube.com/watch?v=jp7vtbLin-s&list=PLq8wAnVUcTFVOtENMsujSgtv2TOsMy8zd&index=8)
 
 개념 Reference : [About Servlet](https://mangkyu.tistory.com/14)
-               : [About_JSP](https://galid1.tistory.com/488)
+               , [About_JSP](https://galid1.tistory.com/488)
 
 개념 정리 된 글 : [Servlet/JSP](https://damin8.github.io/archive/?tag=Servlet_JSP)
 
