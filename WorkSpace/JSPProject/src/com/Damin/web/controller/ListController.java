@@ -41,7 +41,7 @@ public class ListController extends HttpServlet{
 				Notice notice = new Notice(
 						id,
 						title,
-						writerId,
+						writerId, 
 						regdate,
 						hit,
 						files,
@@ -57,6 +57,6 @@ public class ListController extends HttpServlet{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		request.getRequestDispatcher("/notice/list.jsp").forward(request, resp );
+		request.getRequestDispatcher("/WEB-INF/view/notice/list.jsp").forward(request, resp );
 	}
 }
