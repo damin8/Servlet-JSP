@@ -1,17 +1,19 @@
 package com.Damin.web.entity;
 
+import java.util.Date;
+
 public class Notice {
 	private int id;
 	private String title;
 	private String writerId;
-	private String regdate;
+	private Date regdate;
 	private int hit;
 	private String files;
 	private String content;
 	
 	
 	
-	public Notice(int id, String title, String writerId, String regdate, int hit, String files, String content) {
+	public Notice(int id, String title, String writerId, Date regdate, int hit, String files, String content) {
 		this.id = id;
 		this.title = title;
 		this.writerId = writerId;
@@ -59,13 +61,13 @@ public class Notice {
 
 
 
-	public String getRegdate() {
+	public Date getRegdate() {
 		return regdate;
 	}
 
 
 
-	public void setRegdate(String regdate) {
+	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
 

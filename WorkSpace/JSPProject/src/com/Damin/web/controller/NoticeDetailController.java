@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,7 +36,7 @@ public class NoticeDetailController extends HttpServlet {
 			String files = rs.getString("FILES");
 			int hit = rs.getInt("HIT");
 			String writerId = rs.getString("WRITER_ID");
-			String regdate = rs.getString("RGEDATE");
+			Date regdate = rs.getDate("REGDATE");
 			String title = rs.getString("TITLE");
 			Notice notice = new Notice(
 					id,

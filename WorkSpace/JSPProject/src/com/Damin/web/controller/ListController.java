@@ -16,47 +16,31 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.Damin.web.entity.Notice;
+import com.Damin.web.service.NoticeService;
 
 @WebServlet("/notice/list")
 public class ListController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost/servlet";
-			Connection conn = null;
-			conn = DriverManager.getConnection(url,"root","emforhsqhf1");
-			String sql = "SELECT * FROM NOTICE";
-			Statement st = conn.createStatement();
-			ResultSet rs = st.executeQuery(sql);
-			List<Notice> NoticeList = new ArrayList<>();
-			while(rs.next()) {
-				int id = rs.getInt("ID");
-				String content = rs.getString("CONTENT");
-				String files = rs.getString("FILES");
-				int hit = rs.getInt("HIT");
-				String writerId = rs.getString("WRITER_ID");
-				String regdate = rs.getString("RGEDATE");
-				String title = rs.getString("TITLE");
-				Notice notice = new Notice(
-						id,
-						title,
-						writerId, 
-						regdate,
-						hit,
-						files,
-						content
-						);
-				NoticeList.add(notice);
-			}
-			request.setAttribute("nl", NoticeList);
-		    rs.close();
-		    st.close();
-		    conn.close();
-		} catch (ClassNotFoundException | SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		String field = request.getParameter("f");
+		String query = request.getParameter("q");
+		String page = request.getParameter("p");
+		if(field == null || field.equals("")) {
+			field = "title";
 		}
-		request.getRequestDispatcher("/WEB-INF/view/notice/list.jsp").forward(request, resp );
+		if(query == null || query.equals("")) {
+			query = "";
+		}
+		if(page==null || page.equals("")) {
+			page = "1";
+		}
+		NoticeService service = new NoticeService();
+		int count = service.getNoticeCount(field,query);
+		List<Notice> list = service.getNoticeList(field,query,Integer.parseInt(page));
+		request.setAttribute("nl", list);
+		request.setAttribute("count", count);
+		request.
+		getRequestDispatcher("/WEB-INF/view/notice/list.jsp").
+		forward(request, resp );
 	}
 }
