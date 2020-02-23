@@ -180,7 +180,9 @@
 								<tr>
 									<td>${n.id }</td>
 									<td class="title indent text-align-left"><a
-										href="detail?id=${n.id }">${n.title }</a></td>
+										href="detail?id=${n.id }">${n.title }</a>
+										<span></span>
+										</td>
 									<td>${n.writerId }</td>
 									<td><fmt:formatDate pattern="yyyy-MM-dd"
 											value="${n.regdate }" /></td>
@@ -217,7 +219,7 @@
 					<ul class="-list- center">
 						<c:forEach var="i" begin="0" end="4">
 						<c:if test="${(startNum+i) <= lastNum }">
-							<li><a
+							<li><a	
 								class="-text- ${page==(startNum+i)?'orange':'' } bold"
 								href="?p=${startNum + i}&f=${param.f }&q=${param.q}">${startNum + i}</a></li>
 						</c:if>
