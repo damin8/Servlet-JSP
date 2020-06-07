@@ -17,7 +17,7 @@ public class Book {
     private String title;
     private String author;
     private int price;
-    private String rent = "can";
+    private String rent = "Yes";
     private int rentCount = 0;
 
     public Book(int _id, String title, String author, int price) {

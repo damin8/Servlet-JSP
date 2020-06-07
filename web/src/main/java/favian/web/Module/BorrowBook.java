@@ -10,17 +10,16 @@ public class BorrowBook {
     @Autowired
     BookRepository bookRepository;
 
-    public boolean BorrowBook(int id){
+    public Book BorrowBook(int id){
 
         if (bookRepository.countBy_id(id) == 0)
-            return false;
+            return null;
 
         Book book = bookRepository.findBy_id(id);
-        book.setRent("can't");
+        book.setRent("No");
         int rentCount = book.getRentCount() + 1;
         book.setRentCount(rentCount);
-        bookRepository.save(book);
 
-        return true;
+        return bookRepository.save(book);
     }
 }

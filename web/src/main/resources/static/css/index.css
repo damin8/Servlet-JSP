@@ -46,3 +46,178 @@
     color: red;
     border: 1px solid red;
 }
+
+.article {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.article-wrapper {
+    padding-top: 100px;
+    min-height: 100vh;
+    background-color: rgb(248, 248, 248);
+}
+
+.article .content-header {
+    font-weight: bold;
+    font-size: 30px;
+    color: #6d4bab;
+}
+
+.article .content-header #header-descript {
+    font-size: 16px;
+    color: gray;
+}
+
+.article .content {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.article .content .table {
+    margin-top: 30px;
+    background: white;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.article .content .table .book-header {
+    overflow: hidden;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.article .content .table .book-header .book-header-col {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #6d4bab;
+    font-weight: bold;
+}
+
+.article .content .table .book-item {
+    overflow: hidden;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #f3f3f3;
+
+    padding-bottom: 10px;
+}
+
+.article .content .table .book-item .book-item-col {
+    float: left;
+}
+.article .content .table #id {
+    width: 9%;
+}
+.article .content .table #name {
+    width: 30%;
+}
+.article .content .table #author {
+    width: 15%;
+}
+.article .content .table #price {
+    width: 15%;
+}
+.article .content .table #borrow-flag {
+    width: 10%;
+}
+.article .content .table #borrow-count {
+    width: 15%;
+}
+.article .content .table #return {
+    background-color: #6d4bab;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.article .content .table #borrow-btn {
+    background-color: #6d4bab;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.article .content-main .input-row {
+    overflow: hidden;
+    height: 40px;
+
+    margin-top: 20px;
+}
+
+.article .content-main .input-col {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+.article .content-main .input-col input {
+    font-size: 18px;
+    height: 40px;
+}
+.article .content-main .submit-col {
+    float: right;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: #6d4bab;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.article .content-main .borrow-button {
+    float: right;
+    height: 100%;
+    margin-right: 10px;
+    background-color: #6d4bab;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 80px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.article .content-main .success-result-row {
+    text-align: center;
+    font-size: 20px;
+    color: #6d4bab;
+}
+.article .content-main .fail-result-row {
+    text-align: center;
+    font-size: 20px;
+    color: #df1313;
+}
+
+.article .content-main .return-home {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.article .content-main .input-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.article .content-main .input-item #add-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.article .content-main .input-item input {
+    height: 50px;
+}

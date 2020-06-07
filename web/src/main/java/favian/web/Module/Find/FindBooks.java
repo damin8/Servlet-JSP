@@ -23,17 +23,21 @@ public class FindBooks extends Find {
 
     public List<Book> findBorrowableBooks(int pageNum) {
         Criteria criteria = new Criteria("rent");
-        criteria.is("can");
+        criteria.is("Yes");
         return getBooks("_id", pageNum,"ASC", criteria);
     }
 
     public List<Book> findBorrowedBooks(int pageNum) {
         Criteria criteria = new Criteria("rent");
-        criteria.is("can't");
+        criteria.is("No");
         return getBooks("_id", pageNum,"ASC", criteria);
     }
 
     public Book findBookById(int id){
+
+        if(bookRepository.countBy_id(id)==0)
+            return null;
+
         return bookRepository.findBy_id(id);
     }
 }
