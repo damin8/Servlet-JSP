@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/header.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>꿈가득도서관</title>
     </head>
     <body>
         <div class="header header-trans">
@@ -34,38 +34,9 @@
                 <div class="container">
                     <div class="content">
                         <div class="content-header">
-                            대여 결과<span id="header-descript"><br />대여 결과입니다</span>
+                            대여 실패<span id="header-descript"><br />대여가 실패하였습니다.</span>
                         </div>
                         <div class="content-main">
-                            <div class="table">
-                                <div class="book-return">
-                                    <div class="book-header">
-                                        <div class="book-header-col" id="id">아이디</div>
-                                        <div class="book-header-col" id="name">이름</div>
-                                        <div class="book-header-col" id="author">저자</div>
-                                        <div class="book-header-col" id="price">가격</div>
-                                        <div class="book-header-col" id="borrow-flag">대여가능여부</div>
-                                        <div class="book-header-col" id="borrow-count">대여가능회수</div>
-                                    </div>
-                                    <!-- 아이템을 여기다가 넣으면 됩니다 -->
-
-                                    <c:forEach var="book" items="${books }">
-                                        <div class="book-item">
-                                            <div class="book-item-col" id="id">${book._id }</div>
-                                            <div class="book-item-col" id="name">${book.title }</div>
-                                            <div class="book-item-col" id="author">${book.author }</div>
-                                            <div class="book-item-col" id="price">${book.price }</div>
-                                            <div class="book-item-col" id="borrow-flag">${book.rent }</div>
-                                            <div class="book-item-col" id="borrow-count">${book.rentCount }</div>
-                                        </div>
-                                    </c:forEach>
-
-                                </div>
-                            </div>
-
-                            <div class="fail-result-row">
-                                대여 실패하였습니다
-                            </div>
                             <div class="return-home">
                                 <a href="index">돌아가기</a>
                             </div>
@@ -73,8 +44,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </body>
+        </div>    </body>
 
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />

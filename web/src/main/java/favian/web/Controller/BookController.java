@@ -53,8 +53,15 @@ public class BookController {
         String title = map.get("name");
         String author = map.get("author");
         int price = Integer.parseInt(map.get("price"));
-        createBook.CreateBook(id,title,author,price);
 
-        return pageController.listPage("1");
+        boolean isit = createBook.CreateBook(id,title,author,price);
+
+        if(isit==true){
+            return pageController.listPage("1");
+        }
+
+        ModelAndView modelAndView = new ModelAndView("addFail");
+        return modelAndView;
+
     }
 }

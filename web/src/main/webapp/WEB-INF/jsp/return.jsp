@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/header.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>꿈가득도서관</title>
     </head>
     <body>
         <div class="header header-trans">
@@ -43,12 +43,11 @@
                                         <div class="book-header-col" id="name">이름</div>
                                         <div class="book-header-col" id="author">저자</div>
                                         <div class="book-header-col" id="price">가격</div>
-                                        <div class="book-header-col" id="borrow-flag">대여가능여부</div>
-                                        <div class="book-header-col" id="borrow-count">대여가능회수</div>
+                                        <div class="book-header-col" id="borrow-flag">대여 가능 여부</div>
+                                        <div class="book-header-col" id="borrow-count">대여 횟수</div>
                                     </div>
                                     <!-- 아이템을 여기다가 넣으면 됩니다 -->
-
-                                    <c:set var="book" value="${books}" />
+                                    <c:forEach var="book" items="${books }">
                                         <div class="book-item">
                                             <div class="book-item-col" id="id">${book._id }</div>
                                             <div class="book-item-col" id="name">${book.title }</div>
@@ -58,6 +57,7 @@
                                             <div class="book-item-col" id="borrow-count">${book.rentCount }</div>
                                             <div class="book-item-col" id="return" onclick="handleReturn(this)">반납</div>
                                         </div>
+                                    </c:forEach>
                                 </div>
                             </div>
                         </div>

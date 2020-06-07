@@ -221,3 +221,9 @@
 .article .content-main .input-item input {
     height: 50px;
 }
+
+.article .content-main .no-books {
+    text-align: center;
+    font-size: 20px;
+}
+

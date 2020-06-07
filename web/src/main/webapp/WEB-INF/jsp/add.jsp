@@ -9,9 +9,16 @@
         <link rel="stylesheet" type="text/css" href="resources/css/header.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>꿈가득도서관</title>
     </head>
-    <body>
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+
+    <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
         <div class="header header-trans">
             <div class="container">
                 <img id="logo-house" src="resources/img/accent-house.png" />

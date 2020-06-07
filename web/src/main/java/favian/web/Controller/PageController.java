@@ -21,11 +21,6 @@ public class PageController {
         return "index";
     }
 
-    @RequestMapping(value = "/return")
-    public String returnPage(){
-        return "return";
-    }
-
     @RequestMapping(value = "/add")
     public String addPage(){
         return "add";
@@ -45,10 +40,19 @@ public class PageController {
         Book book = findBooks.findBookById(Integer.parseInt(id));
 
         if(book==null){
+            modelAndView.addObject("book",null);
             modelAndView.addObject("message","Not Found");
+            return modelAndView;
         }
-        modelAndView.addObject("book",book);
 
+        if(book.getRent().equals("No"))
+        {
+            modelAndView.addObject("book",null);
+            modelAndView.addObject("message",null);
+            return modelAndView;
+        }
+
+        modelAndView.addObject("book",book);
         return modelAndView;
     }
 
@@ -91,6 +95,19 @@ public class PageController {
         List<Book> books = findBooks.findBorrowedBooks(Integer.parseInt(pageNum));
         modelAndView.addObject("books",books);
 
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/return")
+    public ModelAndView returnPage(@RequestParam(required = false) String pageNum){
+
+        if(pageNum==null){
+            pageNum = "1";
+        }
+
+        ModelAndView modelAndView = new ModelAndView("return");
+        List<Book> books = findBooks.findBorrowedBooks(Integer.parseInt(pageNum));
+        modelAndView.addObject("books",books);
         return modelAndView;
     }
 
