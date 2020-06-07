@@ -48,7 +48,9 @@
                                     책 ID
                                 </span>
                                 <input
-                                    id="book-id"
+                                        maxlength="6"
+
+                                        id="book-id"
                                     type="text"
                                     class="form-control"
                                     placeholder="책 ID"
@@ -60,7 +62,9 @@
                                     이름
                                 </span>
                                 <input
-                                    id="book-name"
+                                        maxlength="20"
+
+                                        id="book-name"
                                     type="text"
                                     class="form-control"
                                     placeholder="이름"
@@ -72,7 +76,9 @@
                                     저자
                                 </span>
                                 <input
-                                    id="book-author"
+                                        maxlength="20"
+
+                                        id="book-author"
                                     type="text"
                                     class="form-control"
                                     placeholder="저자"
@@ -84,7 +90,9 @@
                                     가격
                                 </span>
                                 <input
-                                    id="book-price"
+                                        maxlength="8"
+
+                                        id="book-price"
                                     type="text"
                                     class="form-control"
                                     placeholder="가격"
@@ -117,5 +125,5 @@
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/header.js"></script>
-    <script src="resources/js/add.js"></script>
+    <script src="resources/js/add.js?version=20121221"></script>
 </html>

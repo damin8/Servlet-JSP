@@ -19,7 +19,7 @@
         }
     </script>
 
-    <body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+    <body>
         <div class="header header-trans">
             <div class="container">
                 <img id="logo-house" src="resources/img/accent-house.png" />
@@ -47,6 +47,7 @@
                             <div class="input-row">
                                 <div class="input-col">
                                     <input
+                                            maxlength="6"
                                         id="input-borrow"
                                         type="text"
                                         class="form-control"
@@ -107,5 +108,5 @@
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/header.js"></script>
 
-    <script src="resources/js/borrow.js"></script>
+    <script src="resources/js/borrow.js?version=20121221"></script>
 </html>

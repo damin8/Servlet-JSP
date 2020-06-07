@@ -16,6 +16,8 @@ const checkSpecial = (value) => {
     return true;
 };
 
+
+
 const checkInteger = (value) => {
     if (!(/^(\-|\+)?([0-9]+)$/.test(value) && parseInt(value) > 0)) {
         return false;
@@ -31,6 +33,13 @@ const handleSearch = () => {
         elm.focus();
         return;
     }
+
+    if (!checkInteger(text)) {
+        elm.value = "";
+        elm.focus();
+        return;
+    }
+
     if (!checkBlank(text)) {
         elm.value = "";
         elm.focus();

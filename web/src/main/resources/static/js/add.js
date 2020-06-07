@@ -1,3 +1,12 @@
+const onLoad = () => {
+    console.log("remove");
+    var id = document.getElementById("book-id");
+    var name = document.getElementById("book-name");
+    var author = document.getElementById("book-author");
+    var price = document.getElementById("book-price");
+    id.value = "";
+};
+
 const checkBlank = (value) => {
     var blank_pattern = /^\s+|\s+$/g;
     if (value.replace(blank_pattern, "") == "") {
