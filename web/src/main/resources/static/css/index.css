@@ -17,6 +17,10 @@
 
 .banner .content {
     padding-top: 250px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
 }
 
 .banner .content #title {
@@ -71,6 +75,11 @@
 .article .content {
     padding-top: 20px;
     padding-bottom: 30px;
+
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
 }
 
 .article .content .table {
@@ -104,8 +113,11 @@
     text-align: center;
     padding-top: 10px;
     border-top: 1px solid #f3f3f3;
-
     padding-bottom: 10px;
+    cursor: pointer;
+}
+.article .content .table .book-item:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 .article .content .table .book-item .book-item-col {
@@ -227,3 +239,38 @@
     font-size: 20px;
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

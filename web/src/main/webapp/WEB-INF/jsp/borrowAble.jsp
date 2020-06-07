@@ -46,7 +46,7 @@
                             <!-- 아이템을 여기다가 넣으면 됩니다 -->
 
                             <c:forEach var="book" items="${books }">
-                                <div class="book-item">
+                                <div class="book-item" onclick="onClick(this)">
                                     <div class="book-item-col" id="id">${book._id }</div>
                                     <div class="book-item-col" id="name">${book.title }</div>
                                     <div class="book-item-col" id="author">${book.author }</div>
@@ -84,4 +84,5 @@
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/header.js"></script>
+    <script src="resources/js/list.js"></script>
 </html>
