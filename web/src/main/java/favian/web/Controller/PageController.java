@@ -41,6 +41,7 @@ public class PageController {
             modelAndView.addObject("message",null);
             return modelAndView;
         }
+
         Book book = findBooks.findBookById(Integer.parseInt(id));
 
         if(book==null){

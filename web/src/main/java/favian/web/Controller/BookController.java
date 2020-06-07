@@ -24,7 +24,7 @@ public class BookController {
     @Autowired
     private CreateBook createBook;
 
-    @RequestMapping(value = "/return/book")
+    @RequestMapping(value = "/returnBook")
     public ModelAndView returnBook(@RequestParam String id){
 
         boolean isit = returnBook.returnBook(Integer.parseInt(id));
@@ -32,7 +32,7 @@ public class BookController {
         return pageController.listPage("1");
     }
 
-    @RequestMapping(value = "/borrow/book")
+    @RequestMapping(value = "/borrowBook")
     public ModelAndView borrowBook(@RequestParam String id){
         Book book = borrowBook.BorrowBook(Integer.parseInt(id));
         ModelAndView modelAndView = null;
@@ -47,7 +47,7 @@ public class BookController {
         return modelAndView;
     }
 
-    @RequestMapping(value="/create/book")
+    @RequestMapping(value="/createBook")
     public ModelAndView create(@RequestParam Map<String, String> map){
         int id = Integer.parseInt(map.get("id"));
         String title = map.get("name");

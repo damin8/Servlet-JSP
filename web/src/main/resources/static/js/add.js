@@ -27,7 +27,7 @@ const handleAdd = () => {
     var form = document.createElement("form");
     form.setAttribute("charset", "UTF-8");
     form.setAttribute("method", "Post"); //Post 방식
-    form.setAttribute("action", "/user/signup"); //요청 보낼 주소
+    form.setAttribute("action", "/createBook"); //요청 보낼 주소
 
     var idInput = document.createElement("input");
     var nameInput = document.createElement("input");

@@ -5,7 +5,7 @@ const handleReturn = (target) => {
     var form = document.createElement("form");
     form.setAttribute("charset", "UTF-8");
     form.setAttribute("method", "Post"); //Post 방식
-    form.setAttribute("action", "/return/book"); //요청 보낼 주소
+    form.setAttribute("action", "/returnBook"); //요청 보낼 주소
 
     var hiddenField = document.createElement("input");
     hiddenField.setAttribute("type", "hidden");

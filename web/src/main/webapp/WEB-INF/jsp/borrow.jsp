@@ -51,7 +51,7 @@
                                     검색
                                 </div>
                             </div>
-                            <c:when test="${not empty book}">
+                            <c:if test="${not empty book}">
                                 <div class="table">
                                     <div class="book-return">
                                         <div class="book-header">
@@ -76,7 +76,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </c:when>
+                            </c:if>
                         </div>
                     </div>
                 </div>
