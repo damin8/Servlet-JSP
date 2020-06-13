@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,12 +55,33 @@
                                 </div>
                             </c:forEach>
                         </div>
+                        <c:set var="pageNum" value="${(empty param.pageNum)?1:param.pageNum}"/>
+                        <c:set var="startNum" value="${page-(page-1)%5}"/>
+                        <c:set var="lastNum" value="${fn:substringBefore(Math.ceil(count/5),'.') }" />
+
                         <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+
+                            <c:if test="${startNum > 1 }">
+                                <li class="page-item"><a class="page-link" href="?pageNum=${startNum -1}">이전</a></li>
+                            </c:if>
+                            <c:if test="${startNum <= 1 }">
+                                <li class="page-item"><a class="page-link" onclick="alert('이전 페이지가 없습니다.');">이전</a></li>
+                            </c:if>
+
+                            <c:forEach var="i" begin="0" end="4">
+                                <c:if test="${(startNum+i) <= lastNum }">
+                                    <li class="page-item"><a class="page-link ${pageNum==(startNum+i)?'select':''}"
+                                                             href="?pageNum=${startNum + i}">${startNum + i}</a></li>
+                                </c:if>
+                            </c:forEach>
+
+                            <c:if test="${startNum + 4 < lastNum}">
+                                <li class="page-item"><a class="page-link" href="?p=${startNum + 5}">다음</a></li>
+                            </c:if>
+
+                            <c:if test="${startNum + 4 >= lastNum}">
+                                <li class="page-item"><a class="page-link" onclick="alert('다음 페이지가 없습니다.');">다음</a></li>
+                            </c:if>
                         </ul>
                     </div>
                 </div>
@@ -81,4 +103,5 @@
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/header.js"></script>
+    <script src="resources/js/list.js"></script>
 </html>

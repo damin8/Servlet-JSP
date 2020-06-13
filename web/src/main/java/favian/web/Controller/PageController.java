@@ -82,6 +82,8 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("sortedList");
         List<Book> books = findBooks.findAllBooksByRentCount(Integer.parseInt(pageNum));
         modelAndView.addObject("books",books);
+        int count = findBooks.getBookCount("");
+        modelAndView.addObject("count",count);
 
         return modelAndView;
     }
@@ -96,6 +98,8 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("alreadyBorrow");
         List<Book> books = findBooks.findBorrowedBooks(Integer.parseInt(pageNum));
         modelAndView.addObject("books",books);
+        int count = findBooks.getBookCount("Borrowed");
+        modelAndView.addObject("count",count);
 
         return modelAndView;
     }
@@ -110,6 +114,8 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("return");
         List<Book> books = findBooks.findBorrowedBooks(Integer.parseInt(pageNum));
         modelAndView.addObject("books",books);
+        int count = findBooks.getBookCount("Borrowed");
+        modelAndView.addObject("count",count);
         return modelAndView;
     }
 
@@ -123,6 +129,8 @@ public class PageController {
         ModelAndView modelAndView = new ModelAndView("borrowAble");
         List<Book> books = findBooks.findBorrowableBooks(Integer.parseInt(pageNum));
         modelAndView.addObject("books",books);
+        int count = findBooks.getBookCount("Borrowable");
+        modelAndView.addObject("count",count);
 
         return modelAndView;
     }

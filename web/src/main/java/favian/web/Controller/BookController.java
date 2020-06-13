@@ -37,8 +37,7 @@ public class BookController {
         Book book = borrowBook.BorrowBook(Integer.parseInt(id));
         ModelAndView modelAndView = null;
         if(book == null){
-            modelAndView = new ModelAndView("borrowFail");
-            return modelAndView;
+            return new ModelAndView("redirect:/borrowFail");
         }
 
         modelAndView = new ModelAndView("redirect:/borrowSuccess");
@@ -59,7 +58,21 @@ public class BookController {
         if(isit==true){
             return new ModelAndView("redirect:/list");
         }
-        ModelAndView modelAndView = new ModelAndView("addFail");
-        return modelAndView;
+        return new ModelAndView("redirect:/addFail");
+    }
+
+    @RequestMapping(value = "/addFail")
+    public String addFail(){
+        return "addFail";
+    }
+
+    @RequestMapping(value = "/borrowFail")
+    public String borrowFail(){
+        return "borrowFail";
+    }
+
+    @RequestMapping(value = "/borrowSuccess")
+    public String borrowSuccess(){
+        return "borrowSuccess";
     }
 }
