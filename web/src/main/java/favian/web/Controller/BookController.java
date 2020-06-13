@@ -29,7 +29,7 @@ public class BookController {
 
         boolean isit = returnBook.returnBook(Integer.parseInt(id));
 
-        return pageController.listPage("1");
+        return new ModelAndView("redirect:/list");
     }
 
     @RequestMapping(value = "/borrowBook")
@@ -41,7 +41,7 @@ public class BookController {
             return modelAndView;
         }
 
-        modelAndView = new ModelAndView("borrowSuccess");
+        modelAndView = new ModelAndView("redirect:/borrowSuccess");
         modelAndView.addObject("book",book);
 
         return modelAndView;
@@ -57,11 +57,9 @@ public class BookController {
         boolean isit = createBook.CreateBook(id,title,author,price);
 
         if(isit==true){
-            return pageController.listPage("1");
+            return new ModelAndView("redirect:/list");
         }
-
         ModelAndView modelAndView = new ModelAndView("addFail");
         return modelAndView;
-
     }
 }

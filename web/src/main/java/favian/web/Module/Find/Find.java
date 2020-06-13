@@ -35,4 +35,14 @@ public abstract class Find {
         return books;
     }
 
+    public long countBooks(Criteria criteria){
+        Query query;
+
+        if (criteria == null)
+            query = new Query();
+        else query = new Query(criteria);
+
+        long count = this.mongoTemplate.count(query,Book.class);
+        return count;
+    }
 }

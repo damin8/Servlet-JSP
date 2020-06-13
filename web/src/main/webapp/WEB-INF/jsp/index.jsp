@@ -36,21 +36,31 @@
                 <div class="container">
                     <div class="content">
                         <span id="title"
-                            >꿈이 가득한 새로운<br />
+                        >꿈이 가득한 새로운<br />
                             인터넷 도서관</span
                         >
+                        <div class="text-box">
+                            <p>
+                                Book is&nbsp;
+                                <span class="word wisteria">tasty.</span>
+                                <span class="word belize">wonderful.</span>
+                                <span class="word pomegranate">fancy.</span>
+                                <span class="word green">beautiful.</span>
+                                <span class="word midnight">cheap.</span>
+                            </p>
+                        </div>
                         <br />
-                        <br /><br /><br />
+
+                        <br /><br />
                         <span id="descript">
                             경험해보세요! <br />
                             대출, 반납, 신청 까지 집에서 뚝딱! 꿈가득입니다
                         </span>
+
                         <br />
                         <br />
                         <br />
-                        <br />
-                        <br />
-                        <a href="list" id="get-started"> 시작하기</a>
+                        <a href="list.html" id="get-started"> 시작하기</a>
                     </div>
                 </div>
             </div>
@@ -64,5 +74,6 @@
         <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
         <script src="resources/js/bootstrap.min.js"></script>
         <script src="resources/js/header.js"></script>
+        <script src="resources/js/index.js"></script>
     </body>
 </html>

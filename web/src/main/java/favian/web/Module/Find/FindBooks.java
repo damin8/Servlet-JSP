@@ -14,6 +14,7 @@ public class FindBooks extends Find {
     BookRepository bookRepository;
 
     public List<Book> findAllBooks(int pageNum) {
+
         return getBooks("_id", pageNum,"ASC", null);
     }
 
@@ -39,5 +40,21 @@ public class FindBooks extends Find {
             return null;
 
         return bookRepository.findBy_id(id);
+    }
+
+    public int getBookCount(String param){
+        Criteria criteria = null;
+        if(param.equals("Borrowed"))
+        {
+            criteria = new Criteria("rent");
+            criteria.is("No");
+        }
+        else if(param.equals("Borrowable")){
+            criteria = new Criteria("rent");
+            criteria.is("Yes");
+        }
+
+        long count = countBooks(criteria);
+        return (int)count;
     }
 }

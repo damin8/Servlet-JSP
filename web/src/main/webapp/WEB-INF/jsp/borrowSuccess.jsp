@@ -65,7 +65,7 @@
                                 정삭적으로 대여 되었습니다
                             </div>
                             <div class="return-home">
-                                <a href="index">돌아가기</a>
+                                <a href="list">돌아가기</a>
                             </div>
                         </div>
                     </div>

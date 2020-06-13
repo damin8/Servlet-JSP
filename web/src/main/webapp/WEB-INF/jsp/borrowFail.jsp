@@ -38,7 +38,7 @@
                         </div>
                         <div class="content-main">
                             <div class="return-home">
-                                <a href="index">돌아가기</a>
+                                <a href="list">돌아가기</a>
                             </div>
                         </div>
                     </div>

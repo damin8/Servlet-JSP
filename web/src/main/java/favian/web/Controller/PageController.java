@@ -63,10 +63,12 @@ public class PageController {
             pageNum = "1";
         }
 
+        int count = findBooks.getBookCount("");
+
         ModelAndView modelAndView = new ModelAndView("list");
         List<Book> books = findBooks.findAllBooks(Integer.parseInt(pageNum));
         modelAndView.addObject("books",books);
-
+        modelAndView.addObject("count",count);
         return modelAndView;
     }
 

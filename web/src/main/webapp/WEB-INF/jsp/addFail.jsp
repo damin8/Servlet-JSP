@@ -1,26 +1,19 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: damin
-  Date: 2020-06-08
-  Time: 오전 12:04
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="resources/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
 
-    <link rel="stylesheet" type="text/css" href="resources/css/header.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="resources/css/header.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>꿈가득도서관</title>
 </head>
 <body>
 <div class="header header-trans">
     <div class="container">
-        <img id="logo-house" src="resources/img/accent-house.png" />
-        <img id="logo-main" src="resources/img/accent-logo.png" />
+        <img id="logo-house" src="resources/img/accent-house.png"/>
+        <img id="logo-main" src="resources/img/accent-logo.png"/>
         <span id="nav-menu">
                     <span onclick="goToLink('index')">홈</span>
                     <span onclick="goToLink('list')">목록</span>
@@ -40,12 +33,12 @@
             <div class="content">
                 <div class="content-header">
                     도서 추가 실패<span id="header-descript"
-                ><br />도서 추가에 실패하였습니다 id가 중복되지는 않았을까요?</span
+                ><br/>도서 추가에 실패하였습니다 id가 중복되지는 않았을까요?</span
                 >
                 </div>
                 <div class="content-main">
                     <div class="return-home">
-                        <a href="index">돌아가기</a>
+                        <a href="list">돌아가기</a>
                     </div>
                 </div>
             </div>
@@ -55,10 +48,10 @@
 </body>
 
 <!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
 
 <!-- 부가적인 테마 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
 
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
