@@ -81,16 +81,14 @@
                 </div>
 
                 <c:set var="pageNum" value="${(empty param.pageNum)?1:param.pageNum}"/>
-                <c:set var="startNum" value="${page-(page-1)%5}"/>
+                <c:set var="startNum" value="${pageNum-(pageNum-1)%5}"/>
                 <c:set var="lastNum" value="${fn:substringBefore(Math.ceil(count/5),'.') }"/>
-
                 <div class="pagination-wrapper">
                     <div class="pagination-inner">
                         <ul class="pagination">
 
                             <c:if test="${startNum > 1 }">
-                                <li class="page-item"><a class="page-link" href="?pageNum=${startNum -1}
-                                &option=${param.option}&searchContent=${param.searchContent}">이전</a></li>
+                                <li class="page-item"><a class="page-link" href="?pageNum=${startNum -1}&option=${param.option}&searchContent=${param.searchContent}">이전</a></li>
                             </c:if>
 <%--                            <c:if test="${startNum <= 1 }">--%>
 <%--                                <li class="page-item"><a class="page-link" onclick="alert('이전 페이지가 없습니다.');">이전</a></li>--%>

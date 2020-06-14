@@ -80,15 +80,14 @@
                             </c:forEach>
                         </div>
                         <c:set var="pageNum" value="${(empty param.pageNum)?1:param.pageNum}"/>
-                        <c:set var="startNum" value="${page-(page-1)%5}"/>
+                        <c:set var="startNum" value="${pageNum-(pageNum-1)%5}"/>
                         <c:set var="lastNum" value="${fn:substringBefore(Math.ceil(count/5),'.') }"/>
-
                         <div class="pagination-wrapper">
                             <div class="pagination-inner">
                                 <ul class="pagination">
 
                                     <c:if test="${startNum > 1 }">
-                                        <li class="page-item"><a class="page-link" href="?pageNum=${startNum -1}">이전</a></li>
+                                        <li class="page-item"><a class="page-link" href="?pageNum=${startNum -1}&option=${param.option}&searchContent=${param.searchContent}">이전</a></li>
                                     </c:if>
                                     <%--                            <c:if test="${startNum <= 1 }">--%>
                                     <%--                                <li class="page-item"><a class="page-link" onclick="alert('이전 페이지가 없습니다.');">이전</a></li>--%>
@@ -97,12 +96,12 @@
                                     <c:forEach var="i" begin="0" end="4">
                                         <c:if test="${(startNum+i) <= lastNum }">
                                             <li class="page-item"><a class="page-link ${pageNum==(startNum+i)?'select':''}"
-                                                                     href="?pageNum=${startNum + i}">${startNum + i}</a></li>
+                                                                     href="?pageNum=${startNum + i}&option=${param.option}&searchContent=${param.searchContent}">${startNum + i}</a></li>
                                         </c:if>
                                     </c:forEach>
 
                                     <c:if test="${startNum + 4 < lastNum}">
-                                        <li class="page-item"><a class="page-link" href="?pageNum=${startNum + 5}">다음</a></li>
+                                        <li class="page-item"><a class="page-link" href="?pageNum=${startNum + 5}&option=${param.option}&searchContent=${param.searchContent}">다음</a></li>
                                     </c:if>
 
                                     <%--                            <c:if test="${startNum + 4 >= lastNum}">--%>
@@ -110,7 +109,6 @@
                                     <%--                            </c:if>--%>
 
                                 </ul>
-
                             </div>
                         </div>
                     </div>
