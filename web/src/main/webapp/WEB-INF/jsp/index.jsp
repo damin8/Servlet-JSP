@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="resources/css/index.css" />
-        <link rel="stylesheet" type="text/css" href="resources/css/header.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/index.css?version=20121221" />
+        <link rel="stylesheet" type="text/css" href="resources/css/header.css?version=20121221" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>꿈가득도서관</title>
@@ -16,11 +16,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
     </head>
     <body>
-        <div class="header">
-            <div class="container">
-                <img id="logo-house" src="resources/img/white-house.png" />
-                <img id="logo-main" src="resources/img/white-logo.png" />
-                <span id="nav-menu">
+    <div class="header">
+        <div class="container">
+            <img id="logo-house" src="resources/img/white-house.png" />
+            <img id="logo-main" src="resources/img/white-logo.png" />
+            <span id="nav-menu">
                     <span onclick="goToLink('list')">목록</span>
                     <span onclick="goToLink('sortedList')">대여량 기준 정렬</span>
                     <span onclick="goToLink('alreadyBorrow')">대여 된 책</span>
@@ -29,8 +29,8 @@
                     <span onclick="goToLink('return')">반납</span>
                     <span onclick="goToLink('add')">추가</span>
                 </span>
-            </div>
         </div>
+    </div>
         <div class="banner">
             <div class="black-mask">
                 <div class="container">
@@ -60,7 +60,7 @@
                         <br />
                         <br />
                         <br />
-                        <a href="list.html" id="get-started"> 시작하기</a>
+                        <a href="list" id="get-started"> 시작하기</a>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
         <script src="resources/js/bootstrap.min.js"></script>
-        <script src="resources/js/header.js"></script>
-        <script src="resources/js/index.js"></script>
+        <script src="resources/js/header.js?version=20121221"></script>
+        <script src="resources/js/index.js?version=20121221"></script>
     </body>
 </html>

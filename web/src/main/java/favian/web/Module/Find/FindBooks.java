@@ -13,9 +13,15 @@ public class FindBooks extends Find {
     @Autowired
     BookRepository bookRepository;
 
-    public List<Book> findAllBooks(int pageNum) {
+    public List<Book> findAllBooks(int pageNum, String option, String searchContent) {
 
-        return getBooks("_id", pageNum,"ASC", null);
+        if(option.equals("")&&searchContent.equals(""))
+            return getBooks("_id",pageNum,"ASC",null);
+
+        Criteria criteria = new Criteria(option);
+        criteria.regex(searchContent, "i");
+
+        return getBooks("_id", pageNum,"ASC", criteria);
     }
 
     public List<Book> findAllBooksByRentCount(int pageNum) {
@@ -55,6 +61,15 @@ public class FindBooks extends Find {
         }
 
         long count = countBooks(criteria);
+        return (int)count;
+    }
+
+    public int getBookCount(String param,String option,String searchContent){
+        Criteria criteria = new Criteria(option);
+        criteria.regex(searchContent, "i");
+
+        long count = countBooks(criteria);
+
         return (int)count;
     }
 }

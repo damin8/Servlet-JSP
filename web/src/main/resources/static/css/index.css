@@ -239,54 +239,36 @@
     font-size: 20px;
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@-moz-keyframes fadein {
-    /* Firefox */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@-webkit-keyframes fadein {
-    /* Safari and Chrome */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@-o-keyframes fadein {
-    /* Opera */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.pagination-wrapper {
+    text-align: center;
 }
 
+.pagination-wrapper .pagination-inner {
+    display: inline-block;
+}
+
+.pagination .page-item .page-link {
+    cursor: pointer;
+}
 .pagination .select {
     background: rgb(92, 92, 245);
     color: white;
 }
 
+.text-box {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
 .text {
     position: absolute;
-    width: 450px;
+    top: 50%;
     left: 32%;
+    width: 450px;
     margin-left: -225px;
     height: 40px;
-    top: 50%;
     margin-top: -20px;
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -348,9 +330,38 @@
     color: #5bdf1d;
 }
 
-.text-box {
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 40px;
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

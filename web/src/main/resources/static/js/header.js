@@ -1,3 +1,29 @@
+const checkBlank = (value) => {
+    var blank_pattern = /^\s+|\s+$/g;
+    if (value.replace(blank_pattern, "") == "") {
+        alert("공백 문자는 사용할 수 없습니다.");
+        return false;
+    }
+    return true;
+};
+
+const checkSpecial = (value) => {
+    var special_pattern = /[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/gi;
+    if (special_pattern.test(value) == true) {
+        alert("특수문자는 사용할 수 없습니다.");
+        return false;
+    }
+    return true;
+};
+
+const checkInteger = (value) => {
+    if (!(/^(\-|\+)?([0-9]+)$/.test(value) && parseInt(value) > 0)) {
+        alert("0 이상의 정수만 입력하세요");
+        return false;
+    }
+    return true;
+};
+
 const handleScroll = () => {
     const { innerHeight } = window;
     const { scrollHeight } = document.body;
@@ -37,6 +63,64 @@ const scrollToBorrow = () => {
 };
 
 const goToLink = (link) => {
-    console.log("goto " + link);
     location.href = link;
+};
+
+const search = () => {
+    var s_box = document.getElementsByClassName("serach-field")[0];
+    var n_box = document.getElementById("nav-menu");
+    s_box.style.display = "block";
+    n_box.style.display = "none";
+};
+
+const nav = () => {
+    var s_box = document.getElementsByClassName("serach-field")[0];
+    var n_box = document.getElementById("nav-menu");
+    var input = document.getElementById("search-input");
+    input.value = "";
+    s_box.style.display = "none";
+    n_box.style.display = "block";
+};
+
+const searchSumbit = () => {
+    var elm = document.getElementById("search-input");
+    var input = document.getElementById("search-input").value;
+    var option = document.getElementById("search-option");
+    var optValue = option.options[option.selectedIndex].value;
+
+    if (!checkBlank(input)) {
+        elm.value = "";
+        elm.focus();
+        return;
+    }
+    if (!checkSpecial(input)) {
+        elm.value = "";
+        elm.focus();
+        return;
+    }
+
+    var form = document.createElement("form");
+    form.setAttribute("charset", "UTF-8");
+    form.setAttribute("method", "Get"); //Post 방식
+    form.setAttribute("action", "/list"); //요청 보낼 주소
+
+    var input1 = document.createElement("input");
+    input1.setAttribute("type", "hidden");
+    input1.setAttribute("name", "searchContent");
+    input1.setAttribute("value", input);
+
+    var input2 = document.createElement("input");
+    input2.setAttribute("type", "hidden");
+    input2.setAttribute("name", "option");
+    input2.setAttribute("value", optValue);
+
+    form.appendChild(input1);
+    form.appendChild(input2);
+
+    document.body.appendChild(form);
+    form.submit();
+};
+
+const init = () => {
+    nav();
 };
