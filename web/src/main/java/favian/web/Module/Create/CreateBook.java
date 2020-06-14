@@ -19,4 +19,8 @@ public class CreateBook {
 
         return true;
     }
+
+    public void CreateBook(Book book){
+        bookRepository.save(book);
+    }
 }

@@ -26,4 +26,13 @@ public class Book {
         this.author = author;
         this.price = price;
     }
+
+    public Book(int _id, String title, String author, String rent, int price, int rentCount) {
+        this._id = _id;
+        this.title = title;
+        this.author = author;
+        this.price = price;
+        this.rent = rent;
+        this.rentCount = rentCount;
+    }
 }
