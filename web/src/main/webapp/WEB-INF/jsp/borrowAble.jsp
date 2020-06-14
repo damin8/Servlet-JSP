@@ -104,7 +104,7 @@
                                     </c:forEach>
 
                                     <c:if test="${startNum + 4 < lastNum}">
-                                        <li class="page-item"><a class="page-link" href="?p=${startNum + 5}">다음</a></li>
+                                        <li class="page-item"><a class="page-link" href="?pageNum=${startNum + 5}">다음</a></li>
                                     </c:if>
 
                                     <%--                            <c:if test="${startNum + 4 >= lastNum}">--%>

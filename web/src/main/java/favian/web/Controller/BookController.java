@@ -77,17 +77,17 @@ public class BookController {
     public String borrowSuccess(){
         return "borrowSuccess";
     }
-
-    @RequestMapping(value = "/forTest",method = RequestMethod.POST)
-    public void test(@RequestBody Map<String,String> map){
-        int _id = Integer.parseInt(map.get("_id"));
-        String title = map.get("title");
-        String author = map.get("author");
-        int price = Integer.parseInt(map.get("price"));
-        String rent = map.get("rent");
-        int rentCount = Integer.parseInt(map.get("rentCount"));
-        Book book = new Book(_id,title,author,rent,price,rentCount);
-        System.out.println(book.toString());
-        createBook.CreateBook(book);
-    }
+//
+//    @RequestMapping(value = "/forTest",method = RequestMethod.POST)
+//    public void test(@RequestBody Map<String,String> map){
+//        int _id = Integer.parseInt(map.get("_id"));
+//        String title = map.get("title");
+//        String author = map.get("author");
+//        int price = Integer.parseInt(map.get("price"));
+//        String rent = map.get("rent");
+//        int rentCount = Integer.parseInt(map.get("rentCount"));
+//        Book book = new Book(_id,title,author,rent,price,rentCount);
+//        System.out.println(book.toString());
+//        createBook.CreateBook(book);
+//    }
 }
