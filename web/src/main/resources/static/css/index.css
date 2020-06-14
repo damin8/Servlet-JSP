@@ -365,3 +365,15 @@
         opacity: 1;
     }
 }
+
+.table .No {
+    pointer-events: none;
+}
+.table .No:hover {
+    background-color: white !important;
+}
+.book-item .No {
+    /* color: rgb(173, 88, 88); */
+    color: rgb(184, 184, 184);
+    /* color: white; */
+}
