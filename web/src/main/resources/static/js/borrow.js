@@ -1,29 +1,3 @@
-const checkBlank = (value) => {
-    var blank_pattern = /^\s+|\s+$/g;
-    if (value.replace(blank_pattern, "") == "") {
-        alert("공백 문자는 사용할 수 없습니다.");
-        return false;
-    }
-    return true;
-};
-
-const checkSpecial = (value) => {
-    var special_pattern = /[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/gi;
-    if (special_pattern.test(value) == true) {
-        alert("특수문자는 사용할 수 없습니다.");
-        return false;
-    }
-    return true;
-};
-
-
-
-const checkInteger = (value) => {
-    if (!(/^(\-|\+)?([0-9]+)$/.test(value) && parseInt(value) > 0)) {
-        return false;
-    }
-    return true;
-};
 
 const handleSearch = () => {
     var elm = document.getElementById("input-borrow");

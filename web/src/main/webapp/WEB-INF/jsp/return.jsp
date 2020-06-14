@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="resources/css/index.css?version=20121221" />
+        <link rel="stylesheet" type="text/css" href="resources/css/index.css?version=20121222" />
 
-        <link rel="stylesheet" type="text/css" href="resources/css/header.css?version=20121221" />
+        <link rel="stylesheet" type="text/css" href="resources/css/header.css?version=20121222" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>꿈가득도서관</title>
@@ -79,12 +79,12 @@
                                     </div>
                                     <!-- 아이템을 여기다가 넣으면 됩니다 -->
                                     <c:forEach var="book" items="${books }">
-                                        <div class="book-item ${book.rent}" onclick="onClick(this)">
+                                        <div class="book-item"">
                                             <div class="book-item-col" id="id">${book._id }</div>
                                             <div class="book-item-col" id="name">${book.title }</div>
                                             <div class="book-item-col" id="author">${book.author }</div>
                                             <div class="book-item-col" id="price">${book.price }</div>
-                                            <div class="book-item-col ${book.rent}" id="borrow-flag">${book.rent }</div>
+                                            <div class="book-item-col" id="borrow-flag">${book.rent }</div>
                                             <div class="book-item-col" id="borrow-count">${book.rentCount }</div>
                                             <div class="book-item-col" id="return" onclick="handleReturn(this)">반납</div>
                                         </div>
