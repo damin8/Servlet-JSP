@@ -42,7 +42,7 @@ public class BookController {
             return new ModelAndView("redirect:/borrowFail");
         }
 
-        modelAndView = new ModelAndView("redirect:/borrowSuccess");
+        modelAndView = new ModelAndView("borrowSuccess");
         modelAndView.addObject("book",book);
 
         return modelAndView;

@@ -17,6 +17,9 @@ public class BorrowBook {
 
         Book book = bookRepository.findBy_id(id);
 
+        if(book.getRent().equals("No"))
+            return null;
+
         book.setRent("No");
         int rentCount = book.getRentCount() + 1;
         book.setRentCount(rentCount);

@@ -45,11 +45,11 @@ public class PageController {
             return modelAndView;
         }
 
-        if (book.getRent().equals("No")) {
+        /*if (book.getRent().equals("No")) {
             modelAndView.addObject("book", null);
             modelAndView.addObject("message", null);
             return modelAndView;
-        }
+        }*/
 
         modelAndView.addObject("book", book);
         return modelAndView;
