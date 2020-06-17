@@ -5,6 +5,8 @@
 
 개념 정리 된 글 : [Servlet/JSP](https://damin8.github.io/archive/?tag=Servlet_JSP)
 
+개인 프로젝트 : /web (전자 도서관)
+
 ### Servlet
 
 - 웹 프로그래밍에서 클라이언트의 요청을 처리
